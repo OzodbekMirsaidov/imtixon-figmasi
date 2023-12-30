@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+body {
+
+    width: 100%;
+    background: #e5e5e5;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1440px;
+    background: #ffffff;
+    margin: auto;
+}
+
+
+/* header css start */
+
+.header-article {
+    background: url(Header-llustration-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    padding: 16px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #344563;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px; 
+    transition: all 0.3s ease;
+
+}
+
+nav ul li a:hover {
+    color: #36B37E;
+
+}
+
+/* header css end */
+
+
+
+
+/* home css section start */
+
+.home {
+    text-align: center;
+    padding: 160px;;
+    
+ }
+
+ .home-title {
+    position: relative;
+ }
+
+
+.home-title h1 {
+    color:  #172B4D;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.home-title h1:nth-child(2) {
+    color:  #36B37E;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.home-title p {
+    padding: 24px 175px;
+    color:  #172B4D;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+.home-i i {
+    font-size: 30px;
+    margin-left: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+
+.home-i i:hover {
+    color: #36B37E;
+}
+
+.home-i i:active {
+    color: #000;
+}
+
+.home-bottom i {
+    padding: 20px 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-top: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.home-bottom i:hover {
+    color: #36B37E;
+}
+
+.home-bottom i:active {
+    color: #000;
+}
+
+
+/* home css section end */
+
+
+
+/* Recent  css section start */
+
+
+.Recent {
+    padding: 100px 143px;
+}
+
+
+.title {
+    color: #172B4D;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px; 
+}
+@media only screen and (max-width:600px) {
+    .title {
+        width: 300px;
+    }
+}
+
+
+
+        
+    
+
+.cards {
+    margin-top: 50px;   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    
+
+}
+
+@media only screen and (max-width: 900px ) {
+    .cards  {
+        grid-template-columns: auto auto;
+
+    }
+}
+@media only screen and (max-width: 500px ) {
+    .cards  {
+        grid-template-columns: auto;
+
+    }
+}
+
+.card {
+    width: 369px;
+    border-radius: 10px;
+    border:  1px solid #D0D9D4;
+}
+
+.card-img {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card-title {
+    color: #172B4D;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.card-btns {
+    padding: 16px 16px;
+
+}
+
+.card-btns button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #172B4D;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px; 
+    margin-left: 5px;
+    transition: all 0.1s ease;
+
+}
+
+.card-btns button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.card-btns button:active {
+    background: #F0F0F0;
+    color: #000;
+}
+
+.card-btn {
+    padding: 20px 120px;
+}
+
+.card-btn button {
+    padding: 12px 20px;
+    color:  #FFF; 
+    border-radius: 5px;
+    background: #36B37E;
+    border: none;   
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.card-btn button:hover {
+    background: dodgerblue;
+    color: #000;
+}
+
+.card-btn button:active {
+    background: gold;
+    color:  white;
+}
+
+
+
+
+/* Recent css section end */
+
+
+
+/* about css section start */
+.about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.about-img {
+    margin-top: 200px;
+}
+
+.about-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 120px;
+}
+
+.about-title h1 {
+    color:  #172B4D;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.about-title p {
+    width: 83%;
+    color:  #42526E;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; 
+    align-self: center;
+}
+
+.about-btn button {
+    padding: 12px 12px;
+    border-radius: 5px;
+    background: #36B37E;
+    color: white;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.about-btn button:hover {
+    background: orange;
+    color: #000;
+}
+
+.about-btn button:active {
+    background:#36B37E ;
+    color: white;
+}
+
+/* about css section end */
+
+
+/* abouts css card section start */
+
+
+.about-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 150px;
+    gap: 25px;
+}
+
+@media only screen and ( max-width: 900px) {
+    
+.about-cards {
+    grid-template-columns: auto auto;
+}
+}
+
+
+@media only screen and ( max-width: 500px) {
+    
+.about-cards {
+    grid-template-columns:  auto;
+}
+}
+
+
+.about-card {
+    width: 370px;
+    height: 315px;
+    background: #EBF0EE;
+    border:  1px solid #D0D9D4;
+    border-radius: 5px;
+}
+
+.about-card-img {
+    padding: 50px 160px; 
+}
+
+
+.about-card h3 {
+    color: #344563;
+    text-align: center; 
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px; 
+}
+
+
+.about-card-btns {
+    padding: 30px 45px;
+}
+
+.about-card-btns button {
+    padding: 10px 10px;
+    background: #fff;
+    color: #36B37E;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.about-card-btns button:hover {
+    background: aqua;
+    color: #000;
+} 
+
+.about-card-btns button:active {
+    background: #fff;
+    color: #36B37E;
+}
+
+.about-4-btn {
+    margin-top: 10px;
+}
+
+
+
+.about-card-btn {
+    padding: 30px 45px;
+}
+
+.about-card-btn button {
+    padding: 7px 5px;
+    margin-top: 10px;   
+    background: white;
+    color: #36B37E;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+.about-card-btn button:hover {
+    background: aqua;
+    color: #000;
+} 
+
+.about-card-btn button:active {
+    background: #fff;
+    color: #36B37E;
+}
+
+/* about css cards section end */
+
+
+/* footer css section start */
+
+.footer {
+    padding: 100px 135px;
+}
+
+.footer-title {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+
+.footer-text h3 {
+    width: 470px;
+    color: #172B4D;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-top: 50px;
+ }
+
+   
+
+ .footer-inputs input {
+    width: 300px;
+    padding: 15px 16px;
+    font-size: 15px;
+    border: 1px solid #D0D9D4;
+    margin-left: 25px;
+ }
+
+ .footer-input input {
+    width: 630px;
+    margin-top: 25px;
+    padding: 15px 16px;
+ }
+
+ .footer-input textarea {
+    padding: 12px 12px;
+    color: #42526E;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 25px;
+    border:  1px solid #36B37E;
+ }
+
+ .footer-btn { 
+    padding: 15px 500px;
+ }
+
+ .footer-btn button {
+    padding: 12px 12px;
+    border-radius: 5px;
+    background: #36B37E;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+ }
+
+ .footer-btn button:hover {
+    background: orange;
+    color: #000;
+ }
+
+ .footer-btn button:active {
+    background: #36B37E;
+    color: white;
+ }
+
+ .footer-imgs {
+  margin: -100px -135px;
+ }
+
+ .footer-img {
+    margin-top: -200px;
+    margin-left: 100px;
+ }
+
+ .footer-img-to {
+    margin-left: 93%;
+    margin-top: -40%;
+ } 
+
+
+.footer-i {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+ }
+
+ .footer-i  i {
+    margin-left: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+ }
+ 
+ .footer-i  i:hover {
+    color: #36B37E;
+ }
+
+ .footer-i  i:active {
+    color: #000;
+ }
+
+    /* footer css section end */
+
