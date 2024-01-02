@@ -11,6 +11,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
 
@@ -215,33 +219,22 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.card-btns {
+.span {
     padding: 16px 16px;
-
 }
 
-.card-btns button {
+.span span {
     padding: 8px 12px;
     border-radius: 5px;
     border: none;
     outline: none;
     color: #172B4D;
+    background: #e7e3e3;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px; 
     margin-left: 5px;
-    transition: all 0.1s ease;
 
-}
-
-.card-btns button:hover {
-    background-color: orangered;
-    color: white;
-}
-
-.card-btns button:active {
-    background: #F0F0F0;
-    color: #000;
 }
 
 .card-btn {
@@ -259,13 +252,11 @@ nav ul li a:hover {
 }
 
 .card-btn button:hover {
-    background: dodgerblue;
-    color: #000;
+    background: #20d389;
 }
 
 .card-btn button:active {
-    background: gold;
-    color:  white;
+    background: #36B37E;
 }
 
 
@@ -276,6 +267,7 @@ nav ul li a:hover {
 
 
 /* about css section start */
+
 .about {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -320,13 +312,11 @@ nav ul li a:hover {
     transition: all 0.2s ease;
 }
 .about-btn button:hover {
-    background: orange;
-    color: #000;
+    background: #20d389;
 }
 
 .about-btn button:active {
     background:#36B37E ;
-    color: white;
 }
 
 /* about css section end */
@@ -396,8 +386,7 @@ nav ul li a:hover {
 }
 
 .about-card-btns button:hover {
-    background: aqua;
-    color: #000;
+    background: rgba(246, 246, 246, 0.867);
 } 
 
 .about-card-btns button:active {
@@ -427,8 +416,7 @@ nav ul li a:hover {
 
 
 .about-card-btn button:hover {
-    background: aqua;
-    color: #000;
+    background: rgba(246, 246, 246, 0.867)
 } 
 
 .about-card-btn button:active {
@@ -443,55 +431,58 @@ nav ul li a:hover {
 
 .footer {
     padding: 100px 135px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
-.footer-title {
-    display: grid;
-    grid-template-columns: auto auto auto;
+.footer-text {
+    width: 50%;
 
 }
-
 
 .footer-text h3 {
-    width: 470px;
     color: #172B4D;
     font-size: 30px;
     font-weight: 700;
     line-height: 52px;
-    margin-top: 50px;
  }
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
-   
+form .fullName {
+    display: flex;
+    gap: 24px;
+}
 
- .footer-inputs input {
-    width: 300px;
+ form .fullName input {
+    width: 50%;
     padding: 15px 16px;
     font-size: 15px;
     border: 1px solid #D0D9D4;
-    margin-left: 25px;
  }
 
- .footer-input input {
-    width: 630px;
-    margin-top: 25px;
+ form > input {
+    width: 100%;
     padding: 15px 16px;
  }
 
- .footer-input textarea {
+ form > textarea {
+    width: 100%;
     padding: 12px 12px;
     color: #42526E;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    margin: 25px;
     border:  1px solid #36B37E;
  }
 
- .footer-btn { 
-    padding: 15px 500px;
- }
 
- .footer-btn button {
+ form > button {
     padding: 12px 12px;
     border-radius: 5px;
     background: #36B37E;
@@ -501,37 +492,55 @@ nav ul li a:hover {
     border: none;
     outline: none;
     transition: all 0.2s ease;
+    width: fit-content;
  }
 
- .footer-btn button:hover {
-    background: orange;
-    color: #000;
+ form > button:hover {
+    background: #20d389;
  }
 
- .footer-btn button:active {
+ form > button:active {
     background: #36B37E;
     color: white;
  }
 
+ .footer{
+    position: relative;
+ }
+
+
  .footer-imgs {
-  margin: -100px -135px;
+    position: absolute;
+    left: 0;
+    top: 70%;
  }
 
  .footer-img {
-    margin-top: -200px;
-    margin-left: 100px;
+    position: absolute;
+    left: 20%;
+    top: 100%;
  }
 
  .footer-img-to {
-    margin-left: 93%;
-    margin-top: -40%;
- } 
+    position: absolute;
+    right: 0;
+    top: 40%;
+ }
+
+
+
+
+ .icons {
+
+    /* margin-top: 182px; */
+    margin-top: 15%;
+    
+ }
 
 
 .footer-i {
     font-size: 30px;
     text-align: center;
-    margin-top: 100px;
  }
 
  .footer-i  i {
