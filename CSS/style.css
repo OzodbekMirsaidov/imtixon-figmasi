@@ -427,21 +427,21 @@ nav ul li a:hover {
 /* about css cards section end */
 
 
-/* footer css section start */
+/*contact css section start */
 
-.footer {
+.contact {
     padding: 100px 135px;
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.footer-text {
+.contact-text {
     width: 50%;
 
 }
 
-.footer-text h3 {
+.contact-text h3 {
     color: #172B4D;
     font-size: 30px;
     font-weight: 700;
@@ -504,39 +504,37 @@ form .fullName {
     color: white;
  }
 
- .footer{
+ .contact{
     position: relative;
  }
 
 
- .footer-imgs {
+ .contact-imgs {
     position: absolute;
     left: 0;
     top: 70%;
  }
 
- .footer-img {
+ .contact-img {
     position: absolute;
     left: 20%;
     top: 100%;
  }
 
- .footer-img-to {
+ .contact-img-to {
     position: absolute;
     right: 0;
     top: 40%;
  }
 
+ /*contact css section end */
 
 
+ /* footer css section start */
 
- .icons {
-
-    /* margin-top: 182px; */
+ .footer {
     margin-top: 15%;
-    
  }
-
 
 .footer-i {
     font-size: 30px;
@@ -557,5 +555,6 @@ form .fullName {
     color: #000;
  }
 
-    /* footer css section end */
+ /* footer css section end */
+
 
