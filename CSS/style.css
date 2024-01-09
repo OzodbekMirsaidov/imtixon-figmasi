@@ -40,11 +40,21 @@ button {
     background: url(Header-llustration-desktop@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: top;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 header {
     padding: 16px;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 
@@ -74,20 +84,20 @@ nav ul li a:hover {
 
 
 
-/* home css section start */
+/* home  section css start */
 
-.home {
-    text-align: center;
-    padding: 160px;;
-    
- }
-
- .home-title {
+ .home {
+    width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
  }
 
 
-.home-title h1 {
+.home h1 {
     color:  #172B4D;
     text-align: center;
     font-size: 48px;
@@ -95,29 +105,33 @@ nav ul li a:hover {
     line-height: 60px;
 }
 
-.home-title h1:nth-child(2) {
+
+.home h1 span {
     color:  #36B37E;
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 60px;
 }
 
-.home-title p {
-    padding: 24px 175px;
+
+.home p {
+    width: 50%;
     color:  #172B4D;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
+    text-align: center;
+}
+
+.home-i {
+    display: flex;
+    gap: 20px;
 }
 
 
 .home-i i {
     font-size: 30px;
-    margin-left: 20px;
     transition: all 0.2s ease;
-    cursor: pointer;
-
 }
+
+
 
 .home-i i:hover {
     color: #36B37E;
@@ -127,16 +141,24 @@ nav ul li a:hover {
     color: #000;
 }
 
+.home-bottom {
+    margin-left: 25px;
+}
+
 .home-bottom i {
     padding: 20px 20px;
     border-radius: 50%;
+    margin-top: 10px;
+    font-size: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
     border: 1px solid gray;
-    margin-top: 70px;
-    font-size: 30px;
-    cursor: pointer;
     transition: all 0.3s ease;
 
 }
+
+
 
 .home-bottom i:hover {
     color: #36B37E;
@@ -154,31 +176,25 @@ nav ul li a:hover {
 /* Recent  css section start */
 
 
-.Recent {
+.recent {
     padding: 100px 143px;
 }
 
 
-.title {
+.recent > h1 {
     color: #172B4D;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
     line-height: 52px; 
 }
-@media only screen and (max-width:600px) {
-    .title {
-        width: 300px;
-    }
-}
-
-
 
         
     
 
-.cards {
-    margin-top: 50px;   
+.projects {
+    width: 100%;
+    margin-top: 50px; 
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
@@ -186,81 +202,84 @@ nav ul li a:hover {
 
 }
 
-@media only screen and (max-width: 900px ) {
-    .cards  {
-        grid-template-columns: auto auto;
-
-    }
-}
-@media only screen and (max-width: 500px ) {
-    .cards  {
-        grid-template-columns: auto;
-
-    }
-}
-
-.card {
-    width: 369px;
+.project {
+    padding-bottom: 16px;
+    width: 100%;
     border-radius: 10px;
     border:  1px solid #D0D9D4;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
-.card-img {
-    text-align: center;
-    margin-top: 40px;
+.project-img {
+    width: 100%;
+    aspect-ratio: 4 / 2;
+    overflow: hidden;
 }
 
-.card-title {
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    width: 80%;
     color: #172B4D;
     text-align: center;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    margin-top: 20px;
 }
 
-.span {
-    padding: 16px 16px;
+
+
+.project-tools {
+    padding: 0 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.span span {
+.project-tools span {
     padding: 8px 12px;
+    display: inline-block;
     border-radius: 5px;
-    border: none;
-    outline: none;
     color: #172B4D;
     background: #e7e3e3;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px; 
-    margin-left: 5px;
 
 }
 
-.card-btn {
-    padding: 20px 120px;
-}
-
-.card-btn button {
-    padding: 12px 20px;
-    color:  #FFF; 
+.card-btn  {
+    padding: 12px;
     border-radius: 5px;
     background: #36B37E;
-    border: none;   
-    outline: none;
     transition: all 0.2s ease;
+
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.51px;
 }
 
-.card-btn button:hover {
+.card-btn:hover {
     background: #20d389;
 }
 
-.card-btn button:active {
+.card-btn:active {
     background: #36B37E;
 }
-
-
-
 
 /* Recent css section end */
 
@@ -269,40 +288,54 @@ nav ul li a:hover {
 /* about css section start */
 
 .about {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.about-img {
-    margin-top: 200px;
-}
-
-.about-title {
-    text-align: center;
+    padding: 80px 135px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 48px;
 }
 
-.about-title h1 {
+.about-left-img {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.about-right-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.about-title{
     color:  #172B4D;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
+    text-align: center;
 }
 
-.about-title p {
-    width: 83%;
+.about-subtitle{
+    width: 60%;
     color:  #42526E;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px; 
-    align-self: center;
+    text-align: center;
 }
 
-.about-btn button {
-    padding: 12px 12px;
+.about-btn {
+    padding: 12px;
     border-radius: 5px;
     background: #36B37E;
     color: white;
@@ -311,53 +344,49 @@ nav ul li a:hover {
     outline: none;
     transition: all 0.2s ease;
 }
-.about-btn button:hover {
+
+
+.about-btn:hover {
     background: #20d389;
 }
 
-.about-btn button:active {
+.about-btn:active {
     background:#36B37E ;
 }
 
 /* about css section end */
 
 
-/* abouts css card section start */
+/* about css card section start */
 
 
 .about-cards {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 50px 150px;
     gap: 25px;
 }
 
-@media only screen and ( max-width: 900px) {
-    
-.about-cards {
-    grid-template-columns: auto auto;
-}
-}
-
-
-@media only screen and ( max-width: 500px) {
-    
-.about-cards {
-    grid-template-columns:  auto;
-}
-}
-
-
 .about-card {
-    width: 370px;
-    height: 315px;
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     background: #EBF0EE;
     border:  1px solid #D0D9D4;
     border-radius: 5px;
 }
 
 .about-card-img {
-    padding: 50px 160px; 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -369,59 +398,25 @@ nav ul li a:hover {
     line-height: 32px; 
 }
 
-
 .about-card-btns {
-    padding: 30px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-.about-card-btns button {
-    padding: 10px 10px;
+.about-card-btns span {
+    padding: 12px;
     background: #fff;
     color: #36B37E;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    margin-left: 5px;
+    border-radius: 8px;
     transition: all 0.3s ease;
-}
 
-.about-card-btns button:hover {
-    background: rgba(246, 246, 246, 0.867);
-} 
-
-.about-card-btns button:active {
-    background: #fff;
-    color: #36B37E;
-}
-
-.about-4-btn {
-    margin-top: 10px;
-}
-
-
-
-.about-card-btn {
-    padding: 30px 45px;
-}
-
-.about-card-btn button {
-    padding: 7px 5px;
-    margin-top: 10px;   
-    background: white;
-    color: #36B37E;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-
-
-.about-card-btn button:hover {
-    background: rgba(246, 246, 246, 0.867)
-} 
-
-.about-card-btn button:active {
-    background: #fff;
-    color: #36B37E;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px; 
+    letter-spacing: 0.36px;
 }
 
 /* about css cards section end */
@@ -447,6 +442,8 @@ nav ul li a:hover {
     font-weight: 700;
     line-height: 52px;
  }
+
+
 form {
     width: 50%;
     display: flex;
@@ -504,7 +501,7 @@ form .fullName {
     color: white;
  }
 
- .contact{
+ .contact {
     position: relative;
  }
 
@@ -515,12 +512,13 @@ form .fullName {
     top: 70%;
  }
 
+
  .contact-img {
     position: absolute;
     left: 20%;
     top: 100%;
  }
-
+ 
  .contact-img-to {
     position: absolute;
     right: 0;
@@ -529,6 +527,7 @@ form .fullName {
 
  /*contact css section end */
 
+ 
 
  /* footer css section start */
 
@@ -538,15 +537,17 @@ form .fullName {
 
 .footer-i {
     font-size: 30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
  }
 
  .footer-i  i {
-    margin-left: 20px;
     transition: all 0.2s ease;
-    cursor: pointer;
  }
- 
+
  .footer-i  i:hover {
     color: #36B37E;
  }
@@ -555,6 +556,170 @@ form .fullName {
     color: #000;
  }
 
+
  /* footer css section end */
+
+
+
+ /* media css start */
+
+
+ /* home media start */
+
+ @media (max-width:1200px) {
+    .home h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+ }
+
+
+ @media (max-width:900px) {
+    .home h1 {
+        width: 100%;
+        font-size: 35px;
+    }
+ }
+
+ @media (max-width:600px) {
+    .home h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+ }
+
+ 
+ 
+
+
+
+ @media (max-width:1200px) {
+    .home p {
+        width: 80%;
+    }
+}
+
+ @media (max-width:900px) {
+     .home p {
+         width: 90%;
+        }
+    }
+    
+ @media (max-width:900px) {
+    .home p {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* recent media start */
+
+@media (max-width:1200px) {
+    .projects {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (max-width:900px) {
+    .projects {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (max-width:600px) {
+    .projects {
+        grid-template-columns: auto;
+    }
+
+}
+/* recent media end */
+
+
+
+/* about media start */
+
+
+@media (max-width:1200px) {
+    .about {
+        width: 80%;
+    
+    }
+}
+
+@media (max-width:900px) {
+    .about{
+        width: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    
+    .about{
+        width: 100%;
+    }
+}
+/* about media end */
+/* about card media start */
+
+ @media (max-width:1200px) {
+    .about-cards {
+        grid-template-columns: auto auto;
+    }
+ }
+
+ @media (max-width:900px) {
+    .about-cards {
+        grid-template-columns: auto auto;
+    }
+ }
+
+ @media (max-width:600px) {
+
+    .about-cards {
+        grid-template-columns: auto;
+    }
+ }
+
+/* about card media end */
+
+/* contact media start */
+
+@media (max-width:1200px) {
+    .contact-text h3   {
+        width: 60%;
+        font-size: 28px;
+    } 
+    
+}
+
+@media (max-width:900px) {
+    .contact-text h3   {
+        width: 80%;
+        font-size: 25px;
+    } 
+    
+}
+
+@media (max-width:600px) {
+    .contact-text  h3 {
+        width: 100%;
+        font-size: 20px;
+    } 
+    
+}
+
+/* contact media end */
+
+
+
+
+
+/* home  media end */
+
+
+
+ /* media css end */
 
 
