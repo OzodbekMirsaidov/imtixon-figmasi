@@ -13,6 +13,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 
@@ -51,7 +52,7 @@ button {
 }
 
 header {
-    padding: 16px;
+    padding: 1rem;
     width: 100%;
     position: absolute;
     top: 0;
@@ -62,14 +63,14 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 2rem;
 }
 
 nav ul li a {
     color: #344563;
     font-size: 15px;
     font-weight: 600;
-    line-height: 20px; 
+    line-height: 20px;
     transition: all 0.3s ease;
 
 }
@@ -86,7 +87,7 @@ nav ul li a:hover {
 
 /* home  section css start */
 
- .home {
+.home {
     width: 100%;
     position: relative;
     display: flex;
@@ -94,27 +95,26 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 24px;
- }
+}
 
 
 .home h1 {
-    color:  #172B4D;
+    color: #172B4D;
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
-    line-height: 60px;
 }
 
 
 .home h1 span {
-    color:  #36B37E;
+    color: #36B37E;
 }
 
 
 .home p {
     width: 50%;
-    color:  #172B4D;
-    font-size: 20px;
+    color: #172B4D;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 32px;
     text-align: center;
@@ -177,42 +177,43 @@ nav ul li a:hover {
 
 
 .recent {
-    padding: 100px 143px;
+    padding: 7vw 10%;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .recent > h1 {
     color: #172B4D;
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 52px; 
 }
 
-        
-    
+
+
 
 .projects {
     width: 100%;
-    margin-top: 50px; 
+    margin-top: 3.5vw;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 30px;
-    
-
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
 }
 
 .project {
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     width: 100%;
     border-radius: 10px;
-    border:  1px solid #D0D9D4;
+    border: 1px solid #D0D9D4;
     background: #fff;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .project-img {
@@ -231,15 +232,14 @@ nav ul li a:hover {
     width: 80%;
     color: #172B4D;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 32px;
 }
 
 
 
 .project-tools {
-    padding: 0 16px;
+    padding: 0 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -256,20 +256,20 @@ nav ul li a:hover {
     background: #e7e3e3;
     font-size: 12px;
     font-weight: 600;
-    line-height: 16px; 
+    line-height: 16px;
 
 }
 
-.card-btn  {
+.card-btn {
     padding: 12px;
     border-radius: 5px;
     background: #36B37E;
     transition: all 0.2s ease;
 
     color: #FFF;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: 0.51px;
 }
 
@@ -288,7 +288,8 @@ nav ul li a:hover {
 /* about css section start */
 
 .about {
-    padding: 80px 135px;
+    width: 100%;
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,20 +318,19 @@ nav ul li a:hover {
     justify-content: center;
     gap: 24px;
 }
-.about-title{
-    color:  #172B4D;
+
+.about-title {
+    color: #172B4D;
     font-size: 40px;
     font-weight: 700;
-    line-height: 52px;
     text-align: center;
 }
 
-.about-subtitle{
+.about-subtitle {
     width: 60%;
-    color:  #42526E;
+    color: #42526E;
     font-size: 20px;
     font-weight: 400;
-    line-height: 32px; 
     text-align: center;
 }
 
@@ -351,7 +351,7 @@ nav ul li a:hover {
 }
 
 .about-btn:active {
-    background:#36B37E ;
+    background: #36B37E;
 }
 
 /* about css section end */
@@ -361,8 +361,9 @@ nav ul li a:hover {
 
 
 .about-cards {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 }
 
@@ -375,7 +376,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 24px;
     background: #EBF0EE;
-    border:  1px solid #D0D9D4;
+    border: 1px solid #D0D9D4;
     border-radius: 5px;
 }
 
@@ -392,10 +393,10 @@ nav ul li a:hover {
 
 .about-card h3 {
     color: #344563;
-    text-align: center; 
+    text-align: center;
     font-size: 24px;
     font-weight: 600;
-    line-height: 32px; 
+    line-height: 32px;
 }
 
 .about-card-btns {
@@ -415,7 +416,7 @@ nav ul li a:hover {
 
     font-size: 12px;
     font-weight: 600;
-    line-height: 16px; 
+    line-height: 16px;
     letter-spacing: 0.36px;
 }
 
@@ -433,15 +434,14 @@ nav ul li a:hover {
 
 .contact-text {
     width: 50%;
-
 }
 
 .contact-text h3 {
     color: #172B4D;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 52px;
- }
+}
 
 
 form {
@@ -456,30 +456,30 @@ form .fullName {
     gap: 24px;
 }
 
- form .fullName input {
+form .fullName input {
     width: 50%;
     padding: 15px 16px;
     font-size: 15px;
     border: 1px solid #D0D9D4;
- }
+}
 
- form > input {
+form > input {
     width: 100%;
     padding: 15px 16px;
- }
+}
 
- form > textarea {
+form > textarea {
     width: 100%;
     padding: 12px 12px;
     color: #42526E;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    border:  1px solid #36B37E;
- }
+    border: 1px solid #36B37E;
+}
 
 
- form > button {
+form > button {
     padding: 12px 12px;
     border-radius: 5px;
     background: #36B37E;
@@ -490,50 +490,50 @@ form .fullName {
     outline: none;
     transition: all 0.2s ease;
     width: fit-content;
- }
+}
 
- form > button:hover {
+form > button:hover {
     background: #20d389;
- }
+}
 
- form > button:active {
+form > button:active {
     background: #36B37E;
     color: white;
- }
+}
 
- .contact {
+.contact {
     position: relative;
- }
+}
 
 
- .contact-imgs {
+.contact-imgs {
     position: absolute;
     left: 0;
     top: 70%;
- }
+}
 
 
- .contact-img {
+.contact-img {
     position: absolute;
     left: 20%;
     top: 100%;
- }
- 
- .contact-img-to {
+}
+
+.contact-img-to {
     position: absolute;
     right: 0;
     top: 40%;
- }
+}
 
- /*contact css section end */
+/*contact css section end */
 
- 
 
- /* footer css section start */
 
- .footer {
+/* footer css section start */
+
+.footer {
     margin-top: 15%;
- }
+}
 
 .footer-i {
     font-size: 30px;
@@ -541,185 +541,253 @@ form .fullName {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    
- }
 
- .footer-i  i {
+}
+
+.footer-i i {
     transition: all 0.2s ease;
- }
+}
 
- .footer-i  i:hover {
+.footer-i i:hover {
     color: #36B37E;
- }
+}
 
- .footer-i  i:active {
+.footer-i i:active {
     color: #000;
- }
-
-
- /* footer css section end */
-
-
-
- /* media css start */
-
-
- /* home media start */
-
- @media (max-width:1200px) {
-    .home h1 {
-        width: 100%;
-        font-size: 40px;
-    }
- }
-
-
- @media (max-width:900px) {
-    .home h1 {
-        width: 100%;
-        font-size: 35px;
-    }
- }
-
- @media (max-width:600px) {
-    .home h1 {
-        width: 100%;
-        font-size: 30px;
-    }
- }
-
- 
- 
-
-
-
- @media (max-width:1200px) {
-    .home p {
-        width: 80%;
-    }
 }
 
- @media (max-width:900px) {
-     .home p {
-         width: 90%;
-        }
-    }
-    
- @media (max-width:900px) {
-    .home p {
-        width: 100%;
-        font-size: 18px;
-    }
-}
 
-/* recent media start */
-
-@media (max-width:1200px) {
-    .projects {
-        grid-template-columns: auto auto;
-    }
-
-}
-
-@media (max-width:900px) {
-    .projects {
-        grid-template-columns: auto auto;
-    }
-
-}
-
-@media (max-width:600px) {
-    .projects {
-        grid-template-columns: auto;
-    }
-
-}
-/* recent media end */
+/* footer css section end */
 
 
-
-/* about media start */
+/* media css start */
 
 
 @media (max-width:1200px) {
-    .about {
-        width: 80%;
-    
+    /* home section media start */
+    .home p {
+        width: 70%;
     }
+    /* home section media end */
+    
+    
+    /* about section media start */
+
+
+
+
+
+    .about-subtitle {
+        width: 70%;
+    }
+
+    /* about section media end */
+    
+        
+    /* contact section media start */
+
+    .contact-text {
+        width: 70%;
+
+    }
+    /* contact section media end */
+
 }
 
-@media (max-width:900px) {
-    .about{
+
+
+
+
+@media (max-width: 992px) {
+
+    /* home section media start */
+    .home h1 {
+        font-size: 2.6rem;
+    }
+    /* home section media end */
+
+    /* recent section media start */
+   
+    .recent {
+        padding: 7vw 5%;
+    }
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* recent section media end */
+
+     
+    /* about section media start */
+    
+    .about-left-img {
+        display: none;
+    }
+    
+    .about-right-img {
+        display: none;
+    }
+
+    .about-subtitle {
+        width: 80%;
+    }
+
+        
+    .about-cards {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    /* about section media end */
+
+    /* contact section media start */
+
+    
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-text {
         width: 90%;
     }
-}
 
-@media (max-width:600px) {
-    
-    .about{
+    form {
         width: 100%;
     }
-}
-/* about media end */
-/* about card media start */
 
- @media (max-width:1200px) {
-    .about-cards {
-        grid-template-columns: auto auto;
+    .contact-imgs,
+    .contact-img,
+    .contact-img-to {
+
+        display: none;
+
     }
- }
 
- @media (max-width:900px) {
-    .about-cards {
-        grid-template-columns: auto auto;
-    }
- }
+   
+    /* contact section media end */
 
- @media (max-width:600px) {
 
-    .about-cards {
-        grid-template-columns: auto;
-    }
- }
-
-/* about card media end */
-
-/* contact media start */
-
-@media (max-width:1200px) {
-    .contact-text h3   {
-        width: 60%;
-        font-size: 28px;
-    } 
-    
 }
 
-@media (max-width:900px) {
-    .contact-text h3   {
+
+
+@media  (max-width: 768px) {
+    /* home section media start */
+    .home h1 {
+        font-size: 2.4rem;
+    }
+    .home p {
         width: 80%;
-        font-size: 25px;
-    } 
-    
-}
+        font-size: 1.2rem;
+    }
+    /* home section media end */
 
-@media (max-width:600px) {
-    .contact-text  h3 {
+     /* recent section media start */
+   
+     .project-title {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .project-tools {
+        padding: 5px;
+    }
+    .project-tools span {
+        padding: 5px;
+    }
+    .card-btn {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    /* recent section media end */
+
+    
+    /* about section media start */
+
+    .about-subtitle {
+        width: 90%;
+    }
+
+    /* about section media end */
+
+    /* contact section media start */
+
+    .contact-text {
         width: 100%;
-        font-size: 20px;
-    } 
-    
+    }
+    /* contact section media end */
+
 }
 
-/* contact media end */
 
 
 
 
 
-/* home  media end */
+@media  (max-width: 576px) {
+    /* home section media start */
+    .home h1 {
+        width: 90%;
+        font-size: 2rem;
+    }
+    .home p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    /* home section media end */
+
+    /* recent section media start */
+   
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    /* recent section media end */
+
+
+    .about-subtitle {
+        width: 100%;
+    }
+
+       
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* about section media end */
+
+    /* contact section media start */
+
+    .contact-text {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+
+    }
+    /* contact section media end */
+
+}
 
 
 
- /* media css end */
 
 
+
+@media  (max-width: 420px) {
+    /* home section media start */
+    .home h1 {
+        font-size: 1.6rem;
+    }
+    .home p {
+        width: 90%;
+    }
+    /* home section media end */
+
+
+
+}
+
+
+/* media css end */
